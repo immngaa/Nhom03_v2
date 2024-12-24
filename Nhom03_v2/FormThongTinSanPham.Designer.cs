@@ -246,7 +246,7 @@
 			this.dtgrvThongTinSanPham.RowTemplate.Height = 28;
 			this.dtgrvThongTinSanPham.Size = new System.Drawing.Size(929, 191);
 			this.dtgrvThongTinSanPham.TabIndex = 95;
-			this.dtgrvThongTinSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvThongTinNhanVien_CellContentClick);
+
 			// 
 			// panelChucNang
 			// 
@@ -394,7 +394,6 @@
 			this.btnTimKiem.Name = "btnTimKiem";
 			this.btnTimKiem.Size = new System.Drawing.Size(76, 45);
 			this.btnTimKiem.TabIndex = 67;
-			this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
 			// 
 			// FormThongTinSanPham
 			// 
@@ -409,7 +408,6 @@
 			this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
 			this.Name = "FormThongTinSanPham";
 			this.Text = "FormThongTinSanPham";
-			this.Load += new System.EventHandler(this.FormThongTinSanPham_Load);
 			this.grbThongTinSanPham.ResumeLayout(false);
 			this.grbThongTinSanPham.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinSanPham)).EndInit();
