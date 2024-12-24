@@ -90,6 +90,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,6 +105,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormTheoDoiTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheoDoiTuVan.Designer.cs">
+      <DependentUpon>FormTheoDoiTuVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTiepNhanTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTiepNhanTuVan.Designer.cs">
+      <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBaoHanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +213,12 @@
     <Compile Include="FormThongTinSanPham.Designer.cs">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormXuLyTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXuLyTuVan.Designer.cs">
+      <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBaoHanh.resx">
@@ -232,6 +251,9 @@
     <EmbeddedResource Include="FormQuenMatKhau.resx">
       <DependentUpon>FormQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTheoDoiTuVan.resx">
+      <DependentUpon>FormTheoDoiTuVan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormThongTinDanhGiaKH.resx">
       <DependentUpon>FormThongTinDanhGiaKH.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +271,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongTinSanPham.resx">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTiepNhanTuVan.resx">
+      <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXuLyTuVan.resx">
+      <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
