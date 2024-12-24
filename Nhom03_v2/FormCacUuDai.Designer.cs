@@ -51,8 +51,9 @@
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
-            this.txtNhapMaSP = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
+            this.txtNhapMaSP = new System.Windows.Forms.TextBox();
+            this.btnXem = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinNhanVien)).BeginInit();
             this.panelChucNang.SuspendLayout();
@@ -78,11 +79,11 @@
             this.groupBox2.Controls.Add(this.txtTenKhuyenMai);
             this.groupBox2.Controls.Add(this.txtMaKhuyenMai);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(27, 29);
+            this.groupBox2.Location = new System.Drawing.Point(27, 11);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(929, 361);
+            this.groupBox2.Size = new System.Drawing.Size(921, 298);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chương trình khuyến mãi";
@@ -128,7 +129,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 309);
+            this.label6.Location = new System.Drawing.Point(523, 148);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 25);
@@ -139,7 +140,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(487, 55);
+            this.label5.Location = new System.Drawing.Point(523, 53);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 25);
@@ -158,13 +159,13 @@
             this.txtMaSanPham.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMaSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaSanPham.Location = new System.Drawing.Point(650, 55);
+            this.txtMaSanPham.Location = new System.Drawing.Point(684, 53);
             this.txtMaSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaSanPham.Name = "txtMaSanPham";
             this.txtMaSanPham.PasswordChar = '\0';
             this.txtMaSanPham.PlaceholderText = "";
             this.txtMaSanPham.SelectedText = "";
-            this.txtMaSanPham.Size = new System.Drawing.Size(198, 26);
+            this.txtMaSanPham.Size = new System.Drawing.Size(200, 26);
             this.txtMaSanPham.TabIndex = 66;
             // 
             // txtMoTa
@@ -179,13 +180,13 @@
             this.txtMoTa.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtMoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMoTa.Location = new System.Drawing.Point(174, 309);
+            this.txtMoTa.Location = new System.Drawing.Point(686, 148);
             this.txtMoTa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.PasswordChar = '\0';
             this.txtMoTa.PlaceholderText = "";
             this.txtMoTa.SelectedText = "";
-            this.txtMoTa.Size = new System.Drawing.Size(272, 26);
+            this.txtMoTa.Size = new System.Drawing.Size(197, 33);
             this.txtMoTa.TabIndex = 65;
             this.txtMoTa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -231,7 +232,7 @@
             "NKH03",
             "NKH04",
             "NKH05"});
-            this.cbbTinhTrang.Location = new System.Drawing.Point(648, 94);
+            this.cbbTinhTrang.Location = new System.Drawing.Point(684, 92);
             this.cbbTinhTrang.Margin = new System.Windows.Forms.Padding(2);
             this.cbbTinhTrang.Name = "cbbTinhTrang";
             this.cbbTinhTrang.Size = new System.Drawing.Size(199, 36);
@@ -241,7 +242,7 @@
             // 
             this.lbCapDoThanhVien.AutoSize = true;
             this.lbCapDoThanhVien.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCapDoThanhVien.Location = new System.Drawing.Point(487, 97);
+            this.lbCapDoThanhVien.Location = new System.Drawing.Point(523, 95);
             this.lbCapDoThanhVien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCapDoThanhVien.Name = "lbCapDoThanhVien";
             this.lbCapDoThanhVien.Size = new System.Drawing.Size(120, 25);
@@ -339,11 +340,11 @@
             // 
             this.dtgrvThongTinNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dtgrvThongTinNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrvThongTinNhanVien.Location = new System.Drawing.Point(27, 577);
+            this.dtgrvThongTinNhanVien.Location = new System.Drawing.Point(27, 428);
             this.dtgrvThongTinNhanVien.Name = "dtgrvThongTinNhanVien";
             this.dtgrvThongTinNhanVien.RowHeadersWidth = 62;
             this.dtgrvThongTinNhanVien.RowTemplate.Height = 28;
-            this.dtgrvThongTinNhanVien.Size = new System.Drawing.Size(929, 191);
+            this.dtgrvThongTinNhanVien.Size = new System.Drawing.Size(920, 291);
             this.dtgrvThongTinNhanVien.TabIndex = 101;
             // 
             // panelChucNang
@@ -352,20 +353,21 @@
             this.panelChucNang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChucNang.Controls.Add(this.lbNhapMaSP);
             this.panelChucNang.Controls.Add(this.btnXoa);
+            this.panelChucNang.Controls.Add(this.btnXem);
             this.panelChucNang.Controls.Add(this.btnThem);
             this.panelChucNang.Controls.Add(this.btnSua);
             this.panelChucNang.Controls.Add(this.btnTimKiem);
             this.panelChucNang.Controls.Add(this.txtNhapMaSP);
-            this.panelChucNang.Location = new System.Drawing.Point(27, 436);
+            this.panelChucNang.Location = new System.Drawing.Point(27, 326);
             this.panelChucNang.Name = "panelChucNang";
-            this.panelChucNang.Size = new System.Drawing.Size(929, 87);
+            this.panelChucNang.Size = new System.Drawing.Size(921, 81);
             this.panelChucNang.TabIndex = 100;
             // 
             // lbNhapMaSP
             // 
             this.lbNhapMaSP.AutoSize = true;
             this.lbNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNhapMaSP.Location = new System.Drawing.Point(12, 31);
+            this.lbNhapMaSP.Location = new System.Drawing.Point(3, 28);
             this.lbNhapMaSP.Name = "lbNhapMaSP";
             this.lbNhapMaSP.Size = new System.Drawing.Size(147, 25);
             this.lbNhapMaSP.TabIndex = 71;
@@ -383,9 +385,9 @@
             this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnXoa.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(768, 21);
+            this.btnXoa.Location = new System.Drawing.Point(751, 18);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(116, 45);
+            this.btnXoa.Size = new System.Drawing.Size(96, 38);
             this.btnXoa.TabIndex = 68;
             this.btnXoa.Text = "Xoá";
             // 
@@ -401,9 +403,9 @@
             this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnThem.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(520, 21);
+            this.btnThem.Location = new System.Drawing.Point(547, 18);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(116, 45);
+            this.btnThem.Size = new System.Drawing.Size(96, 38);
             this.btnThem.TabIndex = 69;
             this.btnThem.Text = "Thêm";
             // 
@@ -419,19 +421,11 @@
             this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnSua.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(642, 21);
+            this.btnSua.Location = new System.Drawing.Point(649, 18);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(116, 45);
+            this.btnSua.Size = new System.Drawing.Size(96, 38);
             this.btnSua.TabIndex = 70;
             this.btnSua.Text = "Sửa";
-            // 
-            // txtNhapMaSP
-            // 
-            this.txtNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNhapMaSP.Location = new System.Drawing.Point(204, 27);
-            this.txtNhapMaSP.Name = "txtNhapMaSP";
-            this.txtNhapMaSP.Size = new System.Drawing.Size(200, 32);
-            this.txtNhapMaSP.TabIndex = 64;
             // 
             // btnTimKiem
             // 
@@ -442,21 +436,47 @@
             this.btnTimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
+            this.btnTimKiem.FillColor = System.Drawing.SystemColors.Control;
             this.btnTimKiem.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::Nhom03_v2.Properties.Resources.TimKiem;
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(424, 21);
+            this.btnTimKiem.Location = new System.Drawing.Point(379, 24);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(76, 45);
+            this.btnTimKiem.Size = new System.Drawing.Size(60, 32);
             this.btnTimKiem.TabIndex = 67;
+            // 
+            // txtNhapMaSP
+            // 
+            this.txtNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNhapMaSP.Location = new System.Drawing.Point(173, 24);
+            this.txtNhapMaSP.Name = "txtNhapMaSP";
+            this.txtNhapMaSP.Size = new System.Drawing.Size(200, 32);
+            this.txtNhapMaSP.TabIndex = 64;
+            // 
+            // btnXem
+            // 
+            this.btnXem.BackColor = System.Drawing.Color.Transparent;
+            this.btnXem.BorderColor = System.Drawing.Color.Transparent;
+            this.btnXem.BorderRadius = 20;
+            this.btnXem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
+            this.btnXem.Font = new System.Drawing.Font("Verdana", 10.125F);
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.Location = new System.Drawing.Point(445, 18);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(96, 38);
+            this.btnXem.TabIndex = 69;
+            this.btnXem.Text = "Xem";
             // 
             // FormCacUuDai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 780);
+            this.ClientSize = new System.Drawing.Size(978, 881);
             this.Controls.Add(this.dtgrvThongTinNhanVien);
             this.Controls.Add(this.panelChucNang);
             this.Controls.Add(this.groupBox2);
@@ -464,6 +484,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FormCacUuDai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormCacUuDai";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -501,5 +522,6 @@
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private System.Windows.Forms.TextBox txtNhapMaSP;
+        private Guna.UI2.WinForms.Guna2Button btnXem;
     }
 }

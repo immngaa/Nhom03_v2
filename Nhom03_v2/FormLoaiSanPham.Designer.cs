@@ -42,6 +42,7 @@
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.txtNhapMaSP = new System.Windows.Forms.TextBox();
+            this.btnXem = new Guna.UI2.WinForms.Guna2Button();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinNhanVien)).BeginInit();
@@ -57,9 +58,9 @@
             this.groupBox2.Controls.Add(this.cbbPhanLoai);
             this.groupBox2.Controls.Add(this.lblMaPhanLoai);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(29, 37);
+            this.groupBox2.Location = new System.Drawing.Point(38, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(929, 380);
+            this.groupBox2.Size = new System.Drawing.Size(929, 322);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Loại sản phẩm";
@@ -69,7 +70,7 @@
             this.txtMoTa.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.Location = new System.Drawing.Point(521, 96);
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(318, 245);
+            this.txtMoTa.Size = new System.Drawing.Size(387, 203);
             this.txtMoTa.TabIndex = 76;
             this.txtMoTa.Text = "";
             // 
@@ -163,24 +164,25 @@
             // 
             this.dtgrvThongTinNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dtgrvThongTinNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrvThongTinNhanVien.Location = new System.Drawing.Point(29, 589);
+            this.dtgrvThongTinNhanVien.Location = new System.Drawing.Point(38, 433);
             this.dtgrvThongTinNhanVien.Name = "dtgrvThongTinNhanVien";
             this.dtgrvThongTinNhanVien.RowHeadersWidth = 62;
             this.dtgrvThongTinNhanVien.RowTemplate.Height = 28;
-            this.dtgrvThongTinNhanVien.Size = new System.Drawing.Size(929, 191);
+            this.dtgrvThongTinNhanVien.Size = new System.Drawing.Size(929, 230);
             this.dtgrvThongTinNhanVien.TabIndex = 97;
             // 
             // panelChucNang
             // 
             this.panelChucNang.BackColor = System.Drawing.Color.Transparent;
             this.panelChucNang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelChucNang.Controls.Add(this.btnXem);
+            this.panelChucNang.Controls.Add(this.btnTimKiem);
             this.panelChucNang.Controls.Add(this.lbNhapMaSP);
             this.panelChucNang.Controls.Add(this.btnXoa);
             this.panelChucNang.Controls.Add(this.btnThem);
             this.panelChucNang.Controls.Add(this.btnSua);
-            this.panelChucNang.Controls.Add(this.btnTimKiem);
             this.panelChucNang.Controls.Add(this.txtNhapMaSP);
-            this.panelChucNang.Location = new System.Drawing.Point(29, 451);
+            this.panelChucNang.Location = new System.Drawing.Point(38, 340);
             this.panelChucNang.Name = "panelChucNang";
             this.panelChucNang.Size = new System.Drawing.Size(929, 87);
             this.panelChucNang.TabIndex = 96;
@@ -189,7 +191,7 @@
             // 
             this.lbNhapMaSP.AutoSize = true;
             this.lbNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNhapMaSP.Location = new System.Drawing.Point(12, 31);
+            this.lbNhapMaSP.Location = new System.Drawing.Point(3, 30);
             this.lbNhapMaSP.Name = "lbNhapMaSP";
             this.lbNhapMaSP.Size = new System.Drawing.Size(186, 25);
             this.lbNhapMaSP.TabIndex = 71;
@@ -207,9 +209,9 @@
             this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnXoa.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(768, 21);
+            this.btnXoa.Location = new System.Drawing.Point(807, 21);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(116, 45);
+            this.btnXoa.Size = new System.Drawing.Size(100, 38);
             this.btnXoa.TabIndex = 68;
             this.btnXoa.Text = "Xoá";
             // 
@@ -225,9 +227,9 @@
             this.btnThem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnThem.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(520, 21);
+            this.btnThem.Location = new System.Drawing.Point(557, 21);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(116, 45);
+            this.btnThem.Size = new System.Drawing.Size(100, 38);
             this.btnThem.TabIndex = 69;
             this.btnThem.Text = "Thêm";
             // 
@@ -243,19 +245,37 @@
             this.btnSua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
             this.btnSua.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(642, 21);
+            this.btnSua.Location = new System.Drawing.Point(678, 21);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(116, 45);
+            this.btnSua.Size = new System.Drawing.Size(100, 38);
             this.btnSua.TabIndex = 70;
             this.btnSua.Text = "Sửa";
             // 
             // txtNhapMaSP
             // 
             this.txtNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNhapMaSP.Location = new System.Drawing.Point(204, 27);
+            this.txtNhapMaSP.Location = new System.Drawing.Point(195, 27);
             this.txtNhapMaSP.Name = "txtNhapMaSP";
-            this.txtNhapMaSP.Size = new System.Drawing.Size(200, 32);
+            this.txtNhapMaSP.Size = new System.Drawing.Size(173, 32);
             this.txtNhapMaSP.TabIndex = 64;
+            // 
+            // btnXem
+            // 
+            this.btnXem.BackColor = System.Drawing.Color.Transparent;
+            this.btnXem.BorderColor = System.Drawing.Color.Transparent;
+            this.btnXem.BorderRadius = 20;
+            this.btnXem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
+            this.btnXem.Font = new System.Drawing.Font("Verdana", 10.125F);
+            this.btnXem.ForeColor = System.Drawing.Color.White;
+            this.btnXem.Location = new System.Drawing.Point(428, 21);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(100, 38);
+            this.btnXem.TabIndex = 75;
+            this.btnXem.Text = "Xem";
             // 
             // btnTimKiem
             // 
@@ -266,15 +286,15 @@
             this.btnTimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(38)))), ((int)(((byte)(26)))));
+            this.btnTimKiem.FillColor = System.Drawing.SystemColors.Control;
             this.btnTimKiem.Font = new System.Drawing.Font("Verdana", 10.125F);
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::Nhom03_v2.Properties.Resources.TimKiem;
             this.btnTimKiem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnTimKiem.Location = new System.Drawing.Point(424, 21);
+            this.btnTimKiem.Location = new System.Drawing.Point(362, 26);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(76, 45);
-            this.btnTimKiem.TabIndex = 67;
+            this.btnTimKiem.Size = new System.Drawing.Size(60, 32);
+            this.btnTimKiem.TabIndex = 74;
             // 
             // FormLoaiSanPham
             // 
@@ -313,7 +333,8 @@
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnThem;
         private Guna.UI2.WinForms.Guna2Button btnSua;
-        private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private System.Windows.Forms.TextBox txtNhapMaSP;
+        private Guna.UI2.WinForms.Guna2Button btnXem;
+        private Guna.UI2.WinForms.Guna2Button btnTimKiem;
     }
 }
