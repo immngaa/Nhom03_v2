@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="FormTheoDoiTuVan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +118,9 @@
     <Compile Include="FormTiepNhanTuVan.Designer.cs">
       <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="ClassKetNoiCSDL.cs" />
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     <Compile Include="FormBaoHanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +157,12 @@
     <Compile Include="FormGiaoDienChinh.Designer.cs">
       <DependentUpon>FormGiaoDienChinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHieuSuatNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHieuSuatNhanVien.Designer.cs">
+      <DependentUpon>FormHieuSuatNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLichSuTuVan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,11 +181,29 @@
     <Compile Include="FormNhomKH.Designer.cs">
       <DependentUpon>FormNhomKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPhanHoiKhieuNai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhanHoiKhieuNai.Designer.cs">
+      <DependentUpon>FormPhanHoiKhieuNai.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormQuenMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormQuenMatKhau.Designer.cs">
       <DependentUpon>FormQuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTheoDoiTinhHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheoDoiTinhHinh.Designer.cs">
+      <DependentUpon>FormTheoDoiTinhHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongKeDoanhThu.Designer.cs">
+      <DependentUpon>FormThongKeDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThongTinDanhGiaKH.cs">
       <SubType>Form</SubType>
@@ -213,11 +241,19 @@
     <Compile Include="FormThongTinSanPham.Designer.cs">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FormXuLyTuVan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormXuLyTuVan.Designer.cs">
       <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
+=======
+    <Compile Include="FormTiepNhanKhieuNai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTiepNhanKhieuNai.Designer.cs">
+      <DependentUpon>FormTiepNhanKhieuNai.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -239,6 +275,9 @@
     <EmbeddedResource Include="FormGiaoDienChinh.resx">
       <DependentUpon>FormGiaoDienChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHieuSuatNhanVien.resx">
+      <DependentUpon>FormHieuSuatNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLichSuTuVan.resx">
       <DependentUpon>FormLichSuTuVan.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,11 +287,22 @@
     <EmbeddedResource Include="FormNhomKH.resx">
       <DependentUpon>FormNhomKH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPhanHoiKhieuNai.resx">
+      <DependentUpon>FormPhanHoiKhieuNai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormQuenMatKhau.resx">
       <DependentUpon>FormQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FormTheoDoiTuVan.resx">
       <DependentUpon>FormTheoDoiTuVan.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormTheoDoiTinhHinh.resx">
+      <DependentUpon>FormTheoDoiTinhHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongKeDoanhThu.resx">
+      <DependentUpon>FormThongKeDoanhThu.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongTinDanhGiaKH.resx">
       <DependentUpon>FormThongTinDanhGiaKH.cs</DependentUpon>
@@ -272,11 +322,16 @@
     <EmbeddedResource Include="FormThongTinSanPham.resx">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FormTiepNhanTuVan.resx">
       <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormXuLyTuVan.resx">
       <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FormTiepNhanKhieuNai.resx">
+      <DependentUpon>FormTiepNhanKhieuNai.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Nhom03_v2
 {
-    public partial class FormCTKHThanThiet : Form
+    public partial class FormTheoDoiTinhHinh : Form
     {
-        public FormCTKHThanThiet()
+        public FormTheoDoiTinhHinh()
         {
             InitializeComponent();
-        }
-
-        private void btnXem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
