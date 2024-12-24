@@ -39,21 +39,25 @@
 			this.cbbMaLoaiSP = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.txtTenSP = new Guna.UI2.WinForms.Guna2TextBox();
 			this.txtMaSP = new Guna.UI2.WinForms.Guna2TextBox();
-			this.dtgrvThongTinNhanVien = new System.Windows.Forms.DataGridView();
+			this.dtgrvThongTinSanPham = new System.Windows.Forms.DataGridView();
 			this.panelChucNang = new System.Windows.Forms.Panel();
 			this.lbNhapMaSP = new System.Windows.Forms.Label();
 			this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
 			this.btnThem = new Guna.UI2.WinForms.Guna2Button();
 			this.btnSua = new Guna.UI2.WinForms.Guna2Button();
-			this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
 			this.txtNhapMaSP = new System.Windows.Forms.TextBox();
+			this.lbThuongHieu = new System.Windows.Forms.Label();
+			this.cbbThuongHieu = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
 			this.grbThongTinSanPham.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinNhanVien)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinSanPham)).BeginInit();
 			this.panelChucNang.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// grbThongTinSanPham
 			// 
+			this.grbThongTinSanPham.Controls.Add(this.cbbThuongHieu);
+			this.grbThongTinSanPham.Controls.Add(this.lbThuongHieu);
 			this.grbThongTinSanPham.Controls.Add(this.rtxtMoTa);
 			this.grbThongTinSanPham.Controls.Add(this.lbMoTa);
 			this.grbThongTinSanPham.Controls.Add(this.lbGia);
@@ -232,16 +236,17 @@
 			this.txtMaSP.Size = new System.Drawing.Size(184, 30);
 			this.txtMaSP.TabIndex = 48;
 			// 
-			// dtgrvThongTinNhanVien
+			// dtgrvThongTinSanPham
 			// 
-			this.dtgrvThongTinNhanVien.BackgroundColor = System.Drawing.Color.White;
-			this.dtgrvThongTinNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dtgrvThongTinNhanVien.Location = new System.Drawing.Point(37, 573);
-			this.dtgrvThongTinNhanVien.Name = "dtgrvThongTinNhanVien";
-			this.dtgrvThongTinNhanVien.RowHeadersWidth = 62;
-			this.dtgrvThongTinNhanVien.RowTemplate.Height = 28;
-			this.dtgrvThongTinNhanVien.Size = new System.Drawing.Size(929, 191);
-			this.dtgrvThongTinNhanVien.TabIndex = 95;
+			this.dtgrvThongTinSanPham.BackgroundColor = System.Drawing.Color.White;
+			this.dtgrvThongTinSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dtgrvThongTinSanPham.Location = new System.Drawing.Point(37, 573);
+			this.dtgrvThongTinSanPham.Name = "dtgrvThongTinSanPham";
+			this.dtgrvThongTinSanPham.RowHeadersWidth = 62;
+			this.dtgrvThongTinSanPham.RowTemplate.Height = 28;
+			this.dtgrvThongTinSanPham.Size = new System.Drawing.Size(929, 191);
+			this.dtgrvThongTinSanPham.TabIndex = 95;
+			this.dtgrvThongTinSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvThongTinNhanVien_CellContentClick);
 			// 
 			// panelChucNang
 			// 
@@ -322,6 +327,55 @@
 			this.btnSua.TabIndex = 70;
 			this.btnSua.Text = "Sửa";
 			// 
+			// txtNhapMaSP
+			// 
+			this.txtNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNhapMaSP.Location = new System.Drawing.Point(186, 27);
+			this.txtNhapMaSP.Name = "txtNhapMaSP";
+			this.txtNhapMaSP.Size = new System.Drawing.Size(218, 40);
+			this.txtNhapMaSP.TabIndex = 64;
+			// 
+			// lbThuongHieu
+			// 
+			this.lbThuongHieu.AutoSize = true;
+			this.lbThuongHieu.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbThuongHieu.Location = new System.Drawing.Point(5, 282);
+			this.lbThuongHieu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.lbThuongHieu.Name = "lbThuongHieu";
+			this.lbThuongHieu.Size = new System.Drawing.Size(183, 32);
+			this.lbThuongHieu.TabIndex = 63;
+			this.lbThuongHieu.Text = "Thương hiệu";
+			// 
+			// cbbThuongHieu
+			// 
+			this.cbbThuongHieu.BackColor = System.Drawing.Color.Transparent;
+			this.cbbThuongHieu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbbThuongHieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbbThuongHieu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbbThuongHieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+			this.cbbThuongHieu.Font = new System.Drawing.Font("Verdana", 10.125F);
+			this.cbbThuongHieu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+			this.cbbThuongHieu.ItemHeight = 30;
+			this.cbbThuongHieu.Items.AddRange(new object[] {
+            "DM001 ",
+            "DM002 ",
+            "DM003 ",
+            "DM004 ",
+            "DM005 ",
+            "DM006 ",
+            "DM007 ",
+            "DM008",
+            "DM009 ",
+            "DM010 ",
+            "DM011 ",
+            "DM012 ",
+            ""});
+			this.cbbThuongHieu.Location = new System.Drawing.Point(196, 282);
+			this.cbbThuongHieu.Margin = new System.Windows.Forms.Padding(2);
+			this.cbbThuongHieu.Name = "cbbThuongHieu";
+			this.cbbThuongHieu.Size = new System.Drawing.Size(186, 36);
+			this.cbbThuongHieu.TabIndex = 64;
+			// 
 			// btnTimKiem
 			// 
 			this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
@@ -340,21 +394,14 @@
 			this.btnTimKiem.Name = "btnTimKiem";
 			this.btnTimKiem.Size = new System.Drawing.Size(76, 45);
 			this.btnTimKiem.TabIndex = 67;
-			// 
-			// txtNhapMaSP
-			// 
-			this.txtNhapMaSP.Font = new System.Drawing.Font("Verdana", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNhapMaSP.Location = new System.Drawing.Point(186, 27);
-			this.txtNhapMaSP.Name = "txtNhapMaSP";
-			this.txtNhapMaSP.Size = new System.Drawing.Size(218, 40);
-			this.txtNhapMaSP.TabIndex = 64;
+			this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
 			// 
 			// FormThongTinSanPham
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 38F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(994, 780);
-			this.Controls.Add(this.dtgrvThongTinNhanVien);
+			this.Controls.Add(this.dtgrvThongTinSanPham);
 			this.Controls.Add(this.panelChucNang);
 			this.Controls.Add(this.grbThongTinSanPham);
 			this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -362,9 +409,10 @@
 			this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
 			this.Name = "FormThongTinSanPham";
 			this.Text = "FormThongTinSanPham";
+			this.Load += new System.EventHandler(this.FormThongTinSanPham_Load);
 			this.grbThongTinSanPham.ResumeLayout(false);
 			this.grbThongTinSanPham.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinNhanVien)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtgrvThongTinSanPham)).EndInit();
 			this.panelChucNang.ResumeLayout(false);
 			this.panelChucNang.PerformLayout();
 			this.ResumeLayout(false);
@@ -384,7 +432,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cbbMaLoaiSP;
         private Guna.UI2.WinForms.Guna2TextBox txtTenSP;
         private Guna.UI2.WinForms.Guna2TextBox txtMaSP;
-        private System.Windows.Forms.DataGridView dtgrvThongTinNhanVien;
+        private System.Windows.Forms.DataGridView dtgrvThongTinSanPham;
         private System.Windows.Forms.Panel panelChucNang;
         private System.Windows.Forms.Label lbNhapMaSP;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
@@ -392,5 +440,7 @@
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private System.Windows.Forms.TextBox txtNhapMaSP;
-    }
+		private Guna.UI2.WinForms.Guna2ComboBox cbbThuongHieu;
+		private System.Windows.Forms.Label lbThuongHieu;
+	}
 }
