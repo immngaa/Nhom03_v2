@@ -10,17 +10,22 @@ using System.Windows.Forms;
 
 namespace Nhom03_v2
 {
-    public partial class FormThongTinDanhGiaKH : Form
-    {
-        public FormThongTinDanhGiaKH()
-        {
-            InitializeComponent();
-        }
+	public partial class FormXuLyTuVan : Form
+	{
+		public FormXuLyTuVan()
+		{
+			InitializeComponent();
+		}
 
-        private void rtxtbNDPhanHoi_TextChanged(object sender, EventArgs e)
-        {
+		private void label4_Click(object sender, EventArgs e)
+		{
 
-        }
+		}
+
+		private void dtgrvTiepNhanYeuCau_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
 
 		private void guna2Button3_Click(object sender, EventArgs e)
 		{

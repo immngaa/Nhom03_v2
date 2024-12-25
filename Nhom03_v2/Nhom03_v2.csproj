@@ -39,8 +39,8 @@
     <Reference Include="Google.Protobuf, Version=3.26.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.26.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI2">
-      <HintPath>..\..\..\..\..\..\source\repos\WindowsFormsApp1\packages\Guna.UI2.WinForms.2.0.4.6\lib\net45\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
@@ -90,6 +90,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -104,7 +105,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="FormTheoDoiTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTheoDoiTuVan.Designer.cs">
+      <DependentUpon>FormTheoDoiTuVan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTiepNhanTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTiepNhanTuVan.Designer.cs">
+      <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
+    </Compile>
+=======
     <Compile Include="ClassKetNoiCSDL.cs" />
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     <Compile Include="FormBaoHanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,11 +241,19 @@
     <Compile Include="FormThongTinSanPham.Designer.cs">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="FormXuLyTuVan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXuLyTuVan.Designer.cs">
+      <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
+=======
     <Compile Include="FormTiepNhanKhieuNai.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormTiepNhanKhieuNai.Designer.cs">
       <DependentUpon>FormTiepNhanKhieuNai.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -269,11 +293,16 @@
     <EmbeddedResource Include="FormQuenMatKhau.resx">
       <DependentUpon>FormQuenMatKhau.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="FormTheoDoiTuVan.resx">
+      <DependentUpon>FormTheoDoiTuVan.cs</DependentUpon>
+=======
     <EmbeddedResource Include="FormTheoDoiTinhHinh.resx">
       <DependentUpon>FormTheoDoiTinhHinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongKeDoanhThu.resx">
       <DependentUpon>FormThongKeDoanhThu.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </EmbeddedResource>
     <EmbeddedResource Include="FormThongTinDanhGiaKH.resx">
       <DependentUpon>FormThongTinDanhGiaKH.cs</DependentUpon>
@@ -293,8 +322,16 @@
     <EmbeddedResource Include="FormThongTinSanPham.resx">
       <DependentUpon>FormThongTinSanPham.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="FormTiepNhanTuVan.resx">
+      <DependentUpon>FormTiepNhanTuVan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXuLyTuVan.resx">
+      <DependentUpon>FormXuLyTuVan.cs</DependentUpon>
+=======
     <EmbeddedResource Include="FormTiepNhanKhieuNai.resx">
       <DependentUpon>FormTiepNhanKhieuNai.cs</DependentUpon>
+>>>>>>> 4f529a0bec5509f6f23d14c09edfe2d78f615f9a
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace Nhom03_v2
 {
-	public partial class FormThongTinSanPham : Form
+	public partial class FormTiepNhanTuVan : Form
 	{
-		public FormThongTinSanPham()
+		public FormTiepNhanTuVan()
 		{
 			InitializeComponent();
 		}
 
+		private void FormTiepNhanYeuCau_Load(object sender, EventArgs e)
+		{
 
-
-		
+		}
 	}
 }
