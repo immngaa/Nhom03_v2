@@ -13,11 +13,12 @@ namespace Nhom03_v2
 {
     public partial class FormThongTinKH : Form
     {
-        private string connectionString = "Server=localhost;Database=cskh;Uid=root;Pwd=01072004;";
+        //private string connectionString = "Server=localhost;Database=cskh;Uid=root;Pwd=01072004;";
         public FormThongTinKH()
         {
             InitializeComponent();
         }
+        /*
         private MySqlConnection GetConnection()
         { 
             return new MySqlConnection(connectionString);
@@ -105,7 +106,7 @@ namespace Nhom03_v2
             }
 
         }
-
+        */
         private void btnSua_Click(object sender, EventArgs e)
         {
 
