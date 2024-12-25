@@ -33,7 +33,7 @@
             this.lbNAN = new System.Windows.Forms.Label();
             this.panelChinh = new System.Windows.Forms.Panel();
             this.panelGiua = new System.Windows.Forms.Panel();
-            this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
+//            this.btnDangNhap = new Guna.UI2.WinForms.Guna2Button();
             this.lbDangKy = new System.Windows.Forms.Label();
             this.lbCauHoi = new System.Windows.Forms.Label();
             this.lbQuenMatKhau = new System.Windows.Forms.Label();
